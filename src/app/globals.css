@@ -11,6 +11,13 @@
   --font-2: "Staatliches", sans-serif;
 }
 
+@font-face {
+  font-family: "HarleyStyle";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/harley-style-brush.otf") format("truetype");
+}
+
 body {
   font-family: "Montserrat", sans-serif;
 }
