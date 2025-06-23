@@ -1,4 +1,5 @@
 import { Banner } from "./components/section/Banner";
+import { DemoInstall } from "./components/section/DemoInstall";
 import { Homepages } from "./components/section/Homepages";
 import { ReleasePages } from "./components/section/ReleasePages";
 import { SocialNetwork } from "./components/section/SocialNetwork";
@@ -17,6 +18,9 @@ export default function Home() {
 
       {/* Release Pages */}
       <ReleasePages />
+
+      {/* Demo Install */}
+      <DemoInstall />
     </>
   );
 }
