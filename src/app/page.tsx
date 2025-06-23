@@ -3,6 +3,7 @@ import { DemoInstall } from "./components/section/DemoInstall";
 import { Homepages } from "./components/section/Homepages";
 import { ReleasePages } from "./components/section/ReleasePages";
 import { SocialNetwork } from "./components/section/SocialNetwork";
+import { WoocommerceShop } from "./components/section/WoocommerceShop";
 
 export default function Home() {
   return (
@@ -21,6 +22,9 @@ export default function Home() {
 
       {/* Demo Install */}
       <DemoInstall />
+
+      {/* Woocommerce Shop */}
+      <WoocommerceShop />
     </>
   );
 }
