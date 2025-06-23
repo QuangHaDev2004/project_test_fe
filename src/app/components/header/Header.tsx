@@ -12,11 +12,11 @@ export const Header = () => {
         <div className="container">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <Link href="/" className="font-[700] text-[40px]">
+            <Link href="/" className="font-[500] text-[40px] font-[HarleyStyle]">
               #
             </Link>
             {/* Action */}
-            <Link href="#" className="font-[700] text-[17px] hover:before:block hover:before:w-full relative before:hidden before:absolute before:top-[100%] before:w-0 before:h-[1px] before:bg-black transition duration-300 ease-in">
+            <Link href="#" className="font-[500] text-[17px] hover:before:block hover:before:w-full relative before:hidden before:absolute before:top-[100%] before:w-0 before:h-[1px] before:bg-black transition duration-300 ease-in">
               Buy now
             </Link>
           </div>

@@ -3,10 +3,10 @@ import Link from "next/link"
 export const Banner = () => {
   return (
     <>
-      <div className="font-2 h-[650px] truncate bg-[url(/assets/images/banner-1.jpg)] bg-center bg-no-repeat bg-cover relative before:absolute before:top-0 before:left-0 before:bg-[#f1f0f29e] before:w-full before:h-full">
+      <div className="font-2 h-[800px] truncate bg-[url(/assets/images/banner-1.jpg)] bg-center bg-no-repeat bg-cover relative before:absolute before:top-0 before:left-0 before:bg-[#f1f0f29e] before:w-full before:h-full">
         <div className="container">
           <div className="relative mt-[100px] p-[50px] w-[750px]">
-            <h2 className="font-[500] text-[50px] mb-[20px]">
+            <h2 className="font-[500] text-[70px] mb-[20px] font-[HarleyStyle]">
               Music WordPress Theme
             </h2>
             <h1 className="font-[500] text-[60px] mb-[16px] leading-[1] whitespace-normal">
