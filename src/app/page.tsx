@@ -1,5 +1,6 @@
 import { Banner } from "./components/section/Banner";
 import { Homepages } from "./components/section/Homepages";
+import { SocialNetwork } from "./components/section/SocialNetwork";
 
 export default function Home() {
   return (
@@ -9,6 +10,9 @@ export default function Home() {
 
       {/* Home Page */}
       <Homepages />
+
+      {/* Social Network */}
+      <SocialNetwork />
     </>
   );
 }

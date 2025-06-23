@@ -4,7 +4,7 @@ export const Header = () => {
   return (
     <>
       <div 
-        className="bg-white py-[16px] font-2 sticky top-0 left-0 z-[997]"
+        className="bg-white py-[10px] font-2 sticky top-0 left-0 z-[997]"
         style={{
           boxShadow: "0px 10px 17px -9px rgba(0, 0, 0, .14)"
         }}
