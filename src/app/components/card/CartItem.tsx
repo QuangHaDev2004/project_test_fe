@@ -16,7 +16,7 @@ export const CartItem = (props: CartItemProps) => {
       <div className="text-center">
         <Link
           href="#"
-          className="bg-white block w-full aspect-[433/284] mb-[36px]"
+          className="bg-white block w-full aspect-[433/284] mb-[36px] hover:translate-y-[-8px] duration-200 transition-all ease-in"
           style={{
             boxShadow: "rgba(0, 0, 0, 0.25) 0px 25px 50px -12px"
           }}
