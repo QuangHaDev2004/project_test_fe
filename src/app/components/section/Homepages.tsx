@@ -1,3 +1,4 @@
+import { BoxHead } from "../boxHead/BoxHead"
 import { CartItem } from "../card/CartItem"
 
 export const Homepages = () => {
@@ -83,10 +84,9 @@ export const Homepages = () => {
     <>
       <div className="pt-[100px] pb-[120px]">
         <div className="container">
-          <div className="text-center leading-[1.2] mb-[60px]">
-            <h2 className="font-[500] text-[95px] text-[#B2B2B2] font-[HarleyStyle]">15 Templates</h2>
-            <h3 className="font-[500] text-[35px] text-[#333] font-2">Homepages</h3>
-          </div>
+          {/* Box Head */}
+          <BoxHead subtitle="15 Templates" title="Homepages" />
+
           {/* List Item */}
           <div className="grid grid-cols-3 gap-x-[36px] gap-y-[44px]">
             {/* Item */}

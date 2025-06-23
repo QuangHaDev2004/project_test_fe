@@ -1,5 +1,6 @@
 import { Banner } from "./components/section/Banner";
 import { Homepages } from "./components/section/Homepages";
+import { ReleasePages } from "./components/section/ReleasePages";
 import { SocialNetwork } from "./components/section/SocialNetwork";
 
 export default function Home() {
@@ -13,6 +14,9 @@ export default function Home() {
 
       {/* Social Network */}
       <SocialNetwork />
+
+      {/* Release Pages */}
+      <ReleasePages />
     </>
   );
 }
