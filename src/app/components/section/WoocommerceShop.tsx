@@ -21,8 +21,7 @@ export const WoocommerceShop = () => {
 
           {/* List Item */}
           <Swiper
-            spaceBetween={70}
-            slidesPerView={3}
+            slidesPerView={1}
             loop={true}
             autoplay={{
               delay: 3000,
@@ -30,6 +29,16 @@ export const WoocommerceShop = () => {
             }}
             navigation={true}
             modules={[Autoplay, Navigation]}
+            breakpoints={{
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 30
+              },
+              992: {
+                slidesPerView: 3,
+                spaceBetween: 70
+              }
+            }}
           >
             <SwiperSlide className="">
               <Link

@@ -1,4 +1,5 @@
-import Link from "next/link"
+import Link from "next/link";
+import { HiMiniBars3CenterLeft } from "react-icons/hi2";
 
 export const Header = () => {
   return (
@@ -16,9 +17,14 @@ export const Header = () => {
               #
             </Link>
             {/* Action */}
-            <Link href="#" className="font-[500] text-[17px] hover:before:block hover:before:w-full relative before:hidden before:absolute before:top-[100%] before:w-0 before:h-[1px] before:bg-black transition duration-300 ease-in">
+            <Link href="#" className="lg:block hidden font-[500] text-[17px] hover:before:block hover:before:w-full relative before:hidden before:absolute before:top-[100%] before:w-0 before:h-[1px] before:bg-black transition duration-300 ease-in">
               Buy now
             </Link>
+
+            {/* Button Menu Mobile */}
+            <button className="lg:hidden block cursor-pointer">
+              <HiMiniBars3CenterLeft className="text-[24px]" />
+            </button>
           </div>
         </div>
       </div>

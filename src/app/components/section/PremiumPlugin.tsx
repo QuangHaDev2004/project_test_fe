@@ -83,9 +83,9 @@ export const PremiumPlugin = () => {
           />
 
           {/* List Item */}
-          <div className="grid grid-cols-3 gap-[40px]">
+          <div className="grid md:grid-cols-3 grid-cols-1 lg:gap-[40px] gap-[16px]">
             {dataList.map(item => (
-              <div key={item.id} className="text-center border border-[#eee] rounded-[4px] p-[80px] hover:shadow-lg transition-shadow duration-300">
+              <div key={item.id} className="text-center border border-[#eee] rounded-[4px] lg:p-[80px] p-[16px] hover:shadow-lg transition-shadow duration-300">
                 <div className="w-[80px] aspect-square mx-auto mb-[30px]" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                   <img
                     src={item.image}
@@ -93,7 +93,7 @@ export const PremiumPlugin = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h2 className="font-[600] text-[18px] text-[#333] mb-[20px]" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                <h2 className="font-[600] text-[18px] text-[#333] mb-[20px] min-h-[54px] line-clamp-2" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                   {item.title}
                 </h2>
                 <div className="text-[24px] text-[#ee2851] mb-[60px]" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">

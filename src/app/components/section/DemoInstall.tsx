@@ -6,12 +6,12 @@ import { VscDesktopDownload } from "react-icons/vsc"
 export const DemoInstall = () => {
   return (
     <>
-      <div className="bg-[#1D1D1D] py-[120px] text-white">
+      <div className="bg-[#1D1D1D] md:py-[120px] py-[60px] text-white">
         <div className="container">
           {/* Wrap */}
-          <div className="flex items-center gap-[80px]">
+          <div className="flex flex-wrap items-center lg:gap-[80px] gap-[40px]">
             {/* Left */}
-            <div className="w-[50%] pr-[20px]">
+            <div className="md:w-[50%] w-full md:pr-[20px] p-0">
               <h2 className="font-[500] text-[95px] text-[#616161] font-[HarleyStyle]">
                 Demo Import
               </h2>
@@ -21,13 +21,13 @@ export const DemoInstall = () => {
               <div className="font-[500] text-[15px] text-[#F7F7F7] leading-[1.8] mb-[60px]">
                 Herion includes a One-Click Demo Importer, to allow you to import the demo content easily. It is the cool way to set up your theme in a couple of minutes from this starting point.
               </div>
-              <Link href="#" className="bg-[#EE2851] inline-flex items-center justify-center px-[30px] py-[15px] text-[13px] font-2 hover:bg-white hover:text-black">
+              <Link href="#" className="bg-[#EE2851] inline-flex items-center justify-center px-[30px] py-[15px] text-[13px] font-2 hover:bg-white hover:text-black md:w-auto w-full">
                 Get your copy
               </Link>
             </div>
 
             {/* Right */}
-            <div className="px-[20px] flex-1">
+            <div className="lg:px-[20px] p-0 flex-1">
               <div className="flex flex-col gap-[100px]">
                 {/* Item */}
                 <div className="flex items-center gap-[60px]">
