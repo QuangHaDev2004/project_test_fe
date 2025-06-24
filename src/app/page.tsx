@@ -3,6 +3,7 @@ import { DemoInstall } from "./components/section/DemoInstall";
 import { FeatureList } from "./components/section/FeatureList";
 import { Homepages } from "./components/section/Homepages";
 import { MusicTheme } from "./components/section/MusicTheme";
+import { PremiumPlugin } from "./components/section/PremiumPlugin";
 import { ReleasePages } from "./components/section/ReleasePages";
 import { SocialNetwork } from "./components/section/SocialNetwork";
 import { WoocommerceShop } from "./components/section/WoocommerceShop";
@@ -33,6 +34,9 @@ export default function Home() {
 
       {/* Music Theme */}
       <MusicTheme />
+
+      {/* Premium Plugin */}
+      <PremiumPlugin />
     </>
   );
 }
