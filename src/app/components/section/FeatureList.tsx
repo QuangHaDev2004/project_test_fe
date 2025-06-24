@@ -1,3 +1,4 @@
+"use client"
 import { FaRegCreditCard } from "react-icons/fa";
 import { FaHeadphonesSimple, FaLocationDot, FaPencil, FaRotateLeft } from "react-icons/fa6";
 import { HiOutlineCircleStack, HiOutlineSpeakerWave } from "react-icons/hi2";
@@ -5,6 +6,9 @@ import { ImHammer } from "react-icons/im";
 import { IoCloudDownloadOutline } from "react-icons/io5";
 import { LiaLifeRingSolid } from "react-icons/lia";
 import { MdOutlineCameraAlt, MdOutlineMail } from "react-icons/md";
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from "react";
 
 export const FeatureList = () => {
   const dataList = [
@@ -82,6 +86,10 @@ export const FeatureList = () => {
     }
   ]
 
+  useEffect(() => {
+    AOS.init()
+  }, [])
+
   return (
     <>
       <div className="pt-[80px] pb-[120px]">
@@ -91,7 +99,7 @@ export const FeatureList = () => {
             {dataList.map(item => {
               const Icon = item.icon;
               return (
-                <div key={item.id} className="">
+                <div key={item.id} className="" data-aos="fade-right" data-aos-duration="800" data-aos-delay="200">
                   <div className="w-full h-[90px] flex items-center">
                     {<Icon className="text-[48px] text-[#EE2851]" />}
                   </div>
