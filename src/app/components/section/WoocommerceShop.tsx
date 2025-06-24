@@ -10,7 +10,7 @@ import Link from "next/link";
 export const WoocommerceShop = () => {
   return (
     <>
-      <div className="pt-[100px] pb-[120px]">
+      <div className="bg-[#F7F7F7] pt-[100px] pb-[120px]">
         <div className="container">
           {/* Box Head */}
           <BoxHead
