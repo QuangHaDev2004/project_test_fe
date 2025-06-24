@@ -2,6 +2,7 @@ import { Banner } from "./components/section/Banner";
 import { DemoInstall } from "./components/section/DemoInstall";
 import { FeatureList } from "./components/section/FeatureList";
 import { Homepages } from "./components/section/Homepages";
+import { MusicTheme } from "./components/section/MusicTheme";
 import { ReleasePages } from "./components/section/ReleasePages";
 import { SocialNetwork } from "./components/section/SocialNetwork";
 import { WoocommerceShop } from "./components/section/WoocommerceShop";
@@ -29,6 +30,9 @@ export default function Home() {
 
       {/* Feature List */}
       <FeatureList />
+
+      {/* Music Theme */}
+      <MusicTheme />
     </>
   );
 }
