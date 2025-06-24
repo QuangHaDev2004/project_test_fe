@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Staatliches&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Staatliches&display=swap");
 
 @import "tailwindcss";
 
@@ -29,10 +29,10 @@ body {
   padding-right: 16px;
 }
 
-.swiper-button-prev, 
+.swiper-button-prev,
 .swiper-button-next {
   color: #ddd !important;
-  border: 1px solid #ddd;
+  border: 2px solid #ddd;
   border-radius: 50%;
   width: 60px !important;
   height: 60px !important;
@@ -50,4 +50,22 @@ body {
   color: #333 !important;
 }
 
+.swiper-pagination {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
 
+.swiper-pagination-bullet {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #333;
+  cursor: pointer;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fff;
+}
