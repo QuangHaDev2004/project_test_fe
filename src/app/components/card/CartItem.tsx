@@ -1,5 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
-import Link from "next/link"
+"use client"
+import Link from "next/link";
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from "react";
 
 interface CartItemProps {
   item: {
@@ -11,9 +15,13 @@ interface CartItemProps {
 export const CartItem = (props: CartItemProps) => {
   const { item } = props;
 
+  useEffect(() => {
+    AOS.init()
+  }, [])
+
   return (
     <>
-      <div className="text-center">
+      <div className="text-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
         <Link
           href="#"
           className="bg-white block w-full aspect-[433/284] mb-[36px] hover:translate-y-[-8px] duration-200 transition-all ease-in"

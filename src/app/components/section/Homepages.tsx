@@ -1,7 +1,15 @@
-import { BoxHead } from "../boxHead/BoxHead"
-import { CartItem } from "../card/CartItem"
+"use client"
+import { BoxHead } from "../boxHead/BoxHead";
+import { CartItem } from "../card/CartItem";
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from "react";
 
 export const Homepages = () => {
+  useEffect(() => {
+    AOS.init()
+  }, [])
+
   const DataList = [
     {
       id: 1,
