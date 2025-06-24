@@ -25,7 +25,7 @@ export const BoxHead = (props: BoxHeadProps) => {
         <h3 className="font-[500] text-[35px] text-[#333] font-2 mb-[50px]" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
           {title}
         </h3>
-        <div className="w-[960px] mx-auto font-[400] text-[15px] text-[#939393] leading-[1.8]" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+        <div className="lg:w-[960px] w-full mx-auto font-[400] text-[15px] text-[#939393] leading-[1.8]" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
           {description}
         </div>
       </div>

@@ -14,20 +14,24 @@ export const SocialNetwork = () => {
 
   return (
     <>
-      <div className="w-full relative aspect-video">
-        <video
-          src="/assets/videos/video-demo-1.mp4"
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="w-full h-full object-cover absolute top-0 left-0"
-        >
-        </video>
-        <div className="bg-[rgba(0,0,0,0.7)] absolute w-full h-full inset-0"></div>
-        <div className="absolute inset-0 py-[120px]">
+      <div className="w-full relative">
+        {/* Video nền */}
+        <div className="absolute inset-0 z-[-1]">
+          <video
+            src="/assets/videos/video-demo-1.mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="w-full h-full object-cover"
+          >
+          </video>
+          <div className="bg-[rgba(0,0,0,0.7)] absolute w-full h-full inset-0"></div>
+        </div>
+        {/* Nội dung */}
+        <div className="sm:py-[120px] py-[60px]">
           <div className="container">
-            <div className="w-[925px] mx-auto text-center">
+            <div className="lg:w-[925px] w-full mx-auto text-center">
               <h2 className="font-[500] text-[95px] text-[#565154] font-[HarleyStyle]">Social Integration</h2>
               <h3 className="font-[500] text-[35px] text-white font-2 mt-[-15px] space-x-0.5 mb-[40px]" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                 Social Network & Music Platform Oriented
@@ -36,7 +40,7 @@ export const SocialNetwork = () => {
                 Embed your music and social feeds seamlessly with Herion. Display your media and content directly from Spotify, YouTube, Instagram, Bandsintown, Twitter and more…
               </div>
             </div>
-            <div className="flex items-center justify-center gap-[50px] mb-[100px]">
+            <div className="flex flex-wrap items-center justify-center gap-[50px] mb-[100px]">
               <Link href="#" target="_blank" className="inline-flex items-center justify-center w-[120px] h-[120px]" data-aos="fade-right" data-aos-duration="800" data-aos-delay="100">
                 <FaSpotify className="text-white text-[60px]" />
               </Link>

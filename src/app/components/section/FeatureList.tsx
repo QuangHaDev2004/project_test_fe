@@ -94,7 +94,7 @@ export const FeatureList = () => {
     <>
       <div className="pt-[80px] pb-[120px]">
         <div className="container">
-          <div className="grid grid-cols-4 gap-x-[36px] gap-y-[50px]">
+          <div className="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 lg:gap-x-[36px] gap-x-[20px] lg:gap-y-[50px] gap-y-[20px]">
             {/* Item */}
             {dataList.map(item => {
               const Icon = item.icon;

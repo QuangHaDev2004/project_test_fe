@@ -90,13 +90,13 @@ export const Homepages = () => {
 
   return (
     <>
-      <div className="pt-[100px] pb-[120px]">
+      <div className="sm:pt-[100px] sm:pb-[120px] py-[60px]">
         <div className="container">
           {/* Box Head */}
           <BoxHead subtitle="15 Templates" title="Homepages" />
 
           {/* List Item */}
-          <div className="grid grid-cols-3 gap-x-[36px] gap-y-[44px]">
+          <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:gap-x-[36px] md:gap-y-[44px] gap-[20px]">
             {/* Item */}
             {DataList.map(item => (
               <CartItem key={item.id} item={item} />

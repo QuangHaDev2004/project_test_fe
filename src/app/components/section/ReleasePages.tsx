@@ -124,7 +124,7 @@ export const ReleasePages = () => {
           </div>
 
           {/* List Item */}
-          <div className="grid grid-cols-3 gap-x-[36px] gap-y-[44px]">
+          <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:gap-x-[36px] md:gap-y-[44px] gap-[20px]">
             {data.map(item => (
               <CartItem key={item.id} item={item} />
             ))}
